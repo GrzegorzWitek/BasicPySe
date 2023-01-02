@@ -9,7 +9,24 @@ from selenium.webdriver.common.by import By
 class Test(unittest.TestCase):
     def setUp(self):
         chromedriver_autoinstaller.install()
-        self.driver = webdriver.Chrome()
+        chrome_options = webdriver.ChromeOptions()
+        # Add your options as needed
+        options = [
+            "--no-sandbox",
+            "--headless",
+            "--window-size=1920,1200",
+            # "--ignore-certificate-errors",
+            # "--disable-gpu",
+            # "--window-size=1920,1200",
+            # "--ignore-certificate-errors",
+            # "--disable-extensions",
+            # "--disable-dev-shm-usage",
+            # '--remote-debugging-port=9222'
+        ]
+        for option in options:
+            chrome_options.add_argument(option)
+
+        self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.maximize_window()
         self.driver.get("http://skleptest.pl/")
 
