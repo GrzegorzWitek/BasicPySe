@@ -24,7 +24,7 @@ jobs:
       - name: Running the Python script
         run: python Test.py
 
-     - name: Get Allure history
+      - name: Get Allure history
         uses: actions/checkout@v3
         if: always()
         continue-on-error: true
