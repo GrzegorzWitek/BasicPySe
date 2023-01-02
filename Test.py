@@ -1,12 +1,15 @@
 import time
 import unittest
 from selenium import webdriver
+import chromedriver_autoinstaller
+
 from selenium.webdriver.common.by import By
 
 
 class Test(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path="./chromedriver")
+        chromedriver_autoinstaller.install()
+        self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.driver.get("http://skleptest.pl/")
 
