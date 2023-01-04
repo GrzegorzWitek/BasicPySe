@@ -22,7 +22,7 @@ jobs:
         run: sudo apt-get install xvfb
 
       - name: Running the Python script
-        run: python Test.py
+        run: pytest --alluredir='./allure-results' Test.py
 
       - name: Get Allure history
         uses: actions/checkout@v3
