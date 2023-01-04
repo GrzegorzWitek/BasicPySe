@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jan 04 17:33:34 GMT 2023","Wed Jan 04 17:33:56 GMT 2023","22232","","Test","Test","","","test_example_negative_no_field",""
+"passed","Wed Jan 04 17:33:56 GMT 2023","Wed Jan 04 17:34:02 GMT 2023","6037","","Test","Test","","","test_example_negative_wrong_mail",""
+"failed","Wed Jan 04 17:34:02 GMT 2023","Wed Jan 04 17:34:08 GMT 2023","6031","","Test","Test","","","test_example_positive",""
