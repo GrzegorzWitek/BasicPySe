@@ -10,7 +10,6 @@ class Test(unittest.TestCase):
     def setUp(self):
         chromedriver_autoinstaller.install()
         chrome_options = webdriver.ChromeOptions()
-        # Add your options as needed
         options = [
             "--no-sandbox",
             "--headless",
