@@ -17,7 +17,7 @@ jobs:
         run: sudo apt purge google-chrome-stable
 
       - name: Installing all necessary packages
-        run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay pytest
+        run: pip install chromedriver-autoinstaller selenium pyvirtualdisplay pytest allure-pytest
       - name: Install xvfb
         run: sudo apt-get install xvfb
 
